@@ -39,11 +39,11 @@ let variable = false
 while (variable == false) {
     let tipo = prompt('Que tipo de lavado desea? 1. Lavado Premium 2.Limpieza de Tapizados')
     switch (tipo) {
-        case 1:
+        case '1':
             alert('Usted ha seleccionado Lavado Premium')
             variable = true
             break;
-        case 2:
+        case '2':
             alert('Usted ha seleccionado Limpieza de Tapizados')
             variable = true
             break;
