@@ -1,9 +1,27 @@
+.index{
+  display: flex;
+}
+.index-w{
+  justify-content: center;
+  align-items: center;
+
+}
+.carwash-logo{
+  justify-content: center;
+  align-items: center;
+}
+.index-frase{
+  justify-content: center;
+  align-items: center;
+}
 .servicios{
-  background-color:chartreuse;
+  background: #fff url(../img/megane.jpg) no-repeat center center;
+  background-size: 100%; 
+  position: fixed;
+  z-index: 999;
 }
 .foto-megane{
   width: 100%;
- 
 }
 
 .turnos{

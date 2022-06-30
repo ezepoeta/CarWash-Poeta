@@ -23,11 +23,33 @@ const suma  = (a,b) => a + b
 const resta = (a,b) => a - b
 const iva   = x => x * 0.21
 
-let Lavado  = 900
+let Lavadoauto  = 900
+let Lavadocamioneta = 1000
 let Tapizado = 5000
 let descuento = 150
 let descuento2 = 500
-let nuevoPrecio = resta(suma(Lavado, iva(Lavado)), descuento) 
-let nuevoPrecio2 = resta(suma(Tapizado, iva(Tapizado)), descuento2)
+let nuevoPrecio = resta(suma(Lavadoauto, iva(Lavadoauto)), descuento)
+let nuevoPrecio2 = resta(suma(Lavadocamioneta, iva(Lavadocamioneta)), descuento) 
+let nuevoPrecio3 = resta(suma(Tapizado, iva(Tapizado)), descuento2)
 console.log('El Valor del Lavado seria ' + nuevoPrecio)
-console.log('El valor de la Limpieza de Tapizado es ' + nuevoPrecio2)
+console.log('El valor de la Limpieza de Tapizado es ' + nuevoPrecio3)
+
+let variable = false
+
+while (variable == false) {
+    let tipo = prompt('Que tipo de lavado desea? 1. Lavado Premium 2.Limpieza de Tapizados')
+    switch (tipo) {
+        case 1:
+            alert('Usted ha seleccionado Lavado Premium')
+            variable = true
+            break;
+        case 2:
+            alert('Usted ha seleccionado Limpieza de Tapizados')
+            variable = true
+            break;
+    
+        default:
+            alert('opcion no valida')
+            break;
+    }
+}
