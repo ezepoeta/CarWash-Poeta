@@ -17,7 +17,7 @@
 .servicios{
   background: #fff url(../img/megane.jpg) no-repeat center center;
   background-size: 100%; 
-  position: fixed;
+  
   z-index: 999;
 }
 .foto-megane{

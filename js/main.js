@@ -2,20 +2,18 @@
 
 let ingreso1 = prompt ('Ingrese su nombre');
 
-let ingreso2 = prompt ('Ingrese el vehiculo a lavar');
+let ingreso2 = prompt ('Ingrese su numero para contacto');
+ingreso2 = parseInt(ingreso2);
 
-let ingreso3 = prompt ('Ingrese su numero para contacto');
-ingreso3 = parseInt(ingreso3);
+let ingreso3 = prompt('Ingrese su domicilio');
 
-let ingreso4 = prompt('Ingrese su domicilio');
-
-if (isNaN (ingreso3)){
+if (isNaN (ingreso2)){
     console.log ('El valor ingresado no corresponde a un numero')
 }
 console.log(ingreso1)
 console.log(ingreso2)
 console.log(ingreso3)
-console.log(ingreso4)
+
 
 // costos servicios
 
