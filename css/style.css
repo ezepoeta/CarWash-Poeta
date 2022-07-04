@@ -2,26 +2,41 @@
   display: flex;
 }
 .index-w{
+  display: flex;
   justify-content: center;
   align-items: center;
-
+  padding: 100px 100px 10px 100px;
 }
 .carwash-logo{
   justify-content: center;
   align-items: center;
+  padding: 0px 100px 0px 100px;
 }
 .index-frase{
   justify-content: center;
   align-items: center;
+  padding:  0px 100px 100px 100px;
 }
 .servicios{
-  background: #fff url(../img/megane.jpg) no-repeat center center;
+  background: #ffffff6e url(../img/megane.jpg) no-repeat center center;
   background-size: 100%; 
-  
   z-index: 999;
+
 }
 .foto-megane{
   width: 100%;
+}
+.servicios-title{
+  padding: 100px 100px 100px 100px;
+  color: whitesmoke;
+}
+.servicios-wash{
+  padding: 100px 100px 100px 100px;
+  color: whitesmoke;
+}
+.servicios-tapi{
+  padding: 100px 100px 100px 100px;
+  color: whitesmoke;
 }
 
 .turnos{

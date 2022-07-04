@@ -52,8 +52,33 @@ while (variable == false) {
     }
     if (tipo = 1) {
         console.log('El Valor del Lavado seria ' + nuevoPrecio) 
-          
+
     } else if (tipo = 2){
         console.log('El valor de la Limpieza de Tapizado es ' + nuevoPrecio3)
     }
 }
+// arrays
+const servicios = [];
+servicios.push('tipo:1', 'Nombre: Lavado Auto', 'Precio: 900', 'Descuento 100' )
+servicios.push('tipo :2', 'Nombre Lavado Camioneta', 'Precio 1000', 'Descuento 150' )
+servicios.push('tipo 3', 'Nombre Limpieza Tapizado Basico', 'Precio 3800', 'Descuento 300')
+servicios.push('tipo 4', 'Nombre Limpieza tapizado Completo', 'Precio 5500', 'Descuento 300' )
+
+console.log(servicios)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
