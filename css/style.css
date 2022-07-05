@@ -21,7 +21,7 @@
   background: #ffffff6e url(../img/megane.jpg) no-repeat center center;
   background-size: 100%; 
   z-index: 999;
-
+opacity: 80%;
 }
 .foto-megane{
   width: 100%;
@@ -40,14 +40,30 @@
 }
 
 .turnos{
-  background-color: brown;
-
+  background: url(../img/sandero.jpg) no-repeat center center;
+  background-size: 100%;
+  z-index: 999;
+  opacity: 75%;
+}
+.turnos-title{
+  padding: 400px 400px 400px 400px;
+  color: black;
+  border: solid 2px;
+  border-radius: 30%;
 }
 
 .nosotros{
   background-color: cadetblue;
 }
-
+.nosotros-title{
+  padding: 400px 400px 400px 400px;
+}
 .contacto{
-  background-color: blue;
+  background: url(../img/a3-int.jpg) no-repeat center center;
+  background-size: 100%;
+  z-index: 999;
+  opacity: 75%;
+}
+.contacto-title{
+  padding: 400px 400px 400px 400px;
 }
