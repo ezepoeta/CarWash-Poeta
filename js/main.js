@@ -58,12 +58,29 @@ while (variable == false) {
     }
 }
 // arrays
-const servicios = [('tipo 1', 'Nombre: Lavado Auto', 'Precio: 900', 'Descuento 100','tipo 2', 'Nombre Lavado Camioneta', 'Precio 1000', 'Descuento 150' )];
 
-servicios.push('tipo 3', 'Nombre Limpieza Tapizado Basico', 'Precio 3800', 'Descuento 300')
-servicios.push('tipo 4', 'Nombre Limpieza tapizado Completo', 'Precio 5500', 'Descuento 300' )
+const array = [
+    {
+        tipo: 1,
+        nombre: 'Lavado Auto',
+        precio: 900,
+    },
+    {
+        tipo: 2,
+        nombre: 'Lavado Camioneta',
+        precio: 1000,
+    },
+    {
+        tipo: 3,
+        nombre: 'Lavado Detallado',
+        precio: 1600,
+    }
+]
 
-console.log(servicios)
+array.push({tipo: 4, nombre: 'Limpieza Tapizado Basico', Precio: 3800})
+array.push({tipo: 5, nombre: 'Limpieza tapizado Completo', Precio: 5500} )
+
+console.log(array)
 
 
 

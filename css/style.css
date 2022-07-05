@@ -1,5 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
 .index{
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .index-w{
   display: flex;
@@ -17,6 +24,7 @@
   align-items: center;
   padding:  0px 100px 100px 100px;
 }
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
 .servicios{
   background: #ffffff6e url(../img/megane.jpg) no-repeat center center;
   background-size: 100%; 
@@ -38,7 +46,7 @@ opacity: 80%;
   padding: 100px 100px 100px 100px;
   color: whitesmoke;
 }
-
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
 .turnos{
   background: url(../img/sandero.jpg) no-repeat center center;
   background-size: 100%;
@@ -51,13 +59,18 @@ opacity: 80%;
   border: solid 2px;
   border-radius: 30%;
 }
-
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
 .nosotros{
   background-color: cadetblue;
 }
 .nosotros-title{
   padding: 400px 400px 400px 400px;
 }
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+.galeria-title{
+  padding: 400px 400px 400px 400px;
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
 .contacto{
   background: url(../img/a3-int.jpg) no-repeat center center;
   background-size: 100%;
