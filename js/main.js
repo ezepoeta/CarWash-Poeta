@@ -29,8 +29,7 @@ let descuento2 = 500
 let nuevoPrecio = resta(suma(Lavadoauto, iva(Lavadoauto)), descuento)
 let nuevoPrecio2 = resta(suma(Lavadocamioneta, iva(Lavadocamioneta)), descuento) 
 let nuevoPrecio3 = resta(suma(Tapizado, iva(Tapizado)), descuento2)
-// console.log('El Valor del Lavado seria ' + nuevoPrecio)
-// console.log('El valor de la Limpieza de Tapizado es ' + nuevoPrecio3)
+
 
 let variable = false
 
