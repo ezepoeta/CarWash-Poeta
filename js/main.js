@@ -33,32 +33,32 @@ let nuevoPrecio3 = resta(suma(Tapizado, iva(Tapizado)), descuento2)
 
 let variable = false
 
-while (variable == false) {
-    let tipo = prompt('Que tipo de lavado desea? 1. Lavado Premium 2.Limpieza de Tapizados')
-    switch (tipo) {
-        case '1':
-            alert('Usted ha seleccionado Lavado Premium')
-            variable = true
-            break;
-        case '2':
-            alert('Usted ha seleccionado Limpieza de Tapizados')
-            variable = true
-            break;
+// while (variable == false) {
+//     let tipo = prompt('Menú Principal. 1.Servicios 2.Productos')
+//     switch (tipo) {
+//         case '1':
+//             alert(servicios.find((el), el.tipo == 1, 2, 3, 4, 5 )),
+//             variable = true
+//             break;
+//         case '2':
+//             alert(productos.find((el), el.tipo == 1, 2, 3, 4, 5, 6 , 7, 8, 9 )),
+//             variable = true
+//             break;
     
-        default:
-            alert('opcion no valida')
-            break;
-    }
-    if (tipo = 1) {
-        console.log('El Valor del Lavado seria ' + nuevoPrecio) 
+//         default:
+//             alert('opcion no valida')
+//             break;
+//     }
+    // if (tipo = 1) {
+    //     console.log('El Valor del Lavado seria ' + nuevoPrecio) 
 
-    } else if (tipo = 2){
-        console.log('El valor de la Limpieza de Tapizado es ' + nuevoPrecio3)
-    }
-}
+    // } else if (tipo = 2){
+    //     console.log('El valor de la Limpieza de Tapizado es ' + nuevoPrecio3)
+    // }
+// }
 // arrays
 
-const array = [
+const servicios = [
     {
         tipo: 1,
         nombre: 'Lavado Auto',
@@ -76,17 +76,76 @@ const array = [
     }
 ]
 
-array.push({tipo: 4, nombre: 'Limpieza Tapizado Basico', Precio: 3800})
-array.push({tipo: 5, nombre: 'Limpieza tapizado Completo', Precio: 5500} )
+servicios.push({tipo: 4, nombre: 'Limpieza Tapizado Basico', Precio: 3800})
+servicios.push({tipo: 5, nombre: 'Limpieza tapizado Completo', Precio: 5500} )
 
-console.log(array)
+console.log(servicios)
 
+const productos = [
+    {
+        tipo: 1,
+        nombre: 'Shampoo ph-neutro 5lt',
+        precio: 1400,
+    },
+    {
+        tipo: 2,
+        nombre: 'Shampoo siliconado 5lt',
+        precio: 1200,
+    },
+    {
+        tipo: 3,
+        nombre: 'Apc limpiador 600cc',
+        precio: 600,
+    },
+    {
+        tipo: 4,
+        nombre: 'Apc Tapizados 1lt',
+        precio: 1800,
+    },
+    {
+        tipo: 5,
+        nombre: 'Removedor de insectos 600cc',
+        precio: 1000,
+    },
+    {
+        tipo: 6,
+        nombre: 'Cera Autobrillo 750cc',
+        precio: 1200,
+    },
+    {
+        tipo: 7,
+        nombre: 'Cera Autobrillo Negro 750cc',
+        precio: 1400,
+    },
+    {
+        tipo: 8,
+        nombre: 'Revividor de Negros 1lt',
+        precio: 1200,
+    },
+    {
+        tipo: 9,
+        nombre: 'Silicona 250cc',
+        precio: 1800,
+    }
+]
+console.log(productos)
 
-
-
-
-
-
+while (variable == false) {
+    let tipo = prompt('Menú Principal. 1.Servicios 2.Productos')
+    switch (tipo) {
+        case '1':
+            alert(servicios.find((el), el.tipo == 1, 2, 3, 4, 5 )),
+            variable = true
+            break;
+        case '2':
+            alert(productos.find((el), el.tipo == 1, 2, 3, 4, 5, 6 , 7, 8, 9 )),
+            variable = true
+            break;
+    
+        default:
+            alert('opcion no valida')
+            break;
+    }}
 
 
 

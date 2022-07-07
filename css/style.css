@@ -53,7 +53,7 @@ opacity: 90%;
   background-size: 100%;
   z-index: 999;
   opacity: 90%;
-  
+  width: 100%;
 }
 .turnos-title{
   padding: 400px 400px 400px 400px;
@@ -63,9 +63,10 @@ opacity: 90%;
 }
 /* -------------------------------------------------------------------------------------------------------------------------------------- */
 .nosotros{
-  background:url(../img/sw4.jpg) no-repeat center center;
+  background:url(../img/toro.jpg) no-repeat center center;
   z-index: 999;
   opacity: 90%;
+  width: 100%;
 }
 .nosotros-title{
   padding: 400px 400px 400px 400px;
@@ -75,6 +76,7 @@ opacity: 90%;
   background: url(../img/a4-engine.jpg) no-repeat center center;
   z-index: 999;
   opacity: 90%;
+  width: 100%;
 }
 .galeria-title{
   padding: 400px 400px 400px 400px;
@@ -85,6 +87,7 @@ opacity: 90%;
   background-size: 100%;
   z-index: 999;
   opacity: 90%;
+width: 100%;
 }
 .contacto-title{
   display: flex;
