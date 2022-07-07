@@ -2,63 +2,65 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>CarWash Servicio a Domicilio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>CarWash Servicio a Domicilio</title>
 </head>
 
 <body>
-    <header >
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light header-container" style="background-color: #caffff;">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">CarWash Serv a Dom</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0" >
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#services">Servicios</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#appointments">Turnos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#aboutus">Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#gallery">Galeria</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#contact">Contacto</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
-<main>
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light header-container" style="background-color: #caffff;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">CarWash Serv a Dom</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#services">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#appointments">Turnos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#aboutus">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#gallery">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#contact">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
     <section class="index">
       <div>
         <H1 class="index-w">Bienvenidos</H1>
-       <div class="carwash-logo"><img src="./img/car.png" alt="carwash" width="60%"></div>
+        <div class="carwash-logo"><img src="./img/car.png" alt="carwash" width="60%"></div>
         <h2 class="index-frase">El mejor servicio desde la comodidad de su casa!</h2>
       </div>
-      </section>
+    </section>
 
-    <section id="services" >
-        <div class="servicios">
+    <section id="services">
+      <div class="servicios">
 
         <h2 class="servicios-title">Servicios</h2>
         <h3 class="servicios-wash">Lavados Premiun</h3>
         <H3 class="servicios-tapi">Limpieza de Tapizados</H3>
-        </div>
+      </div>
     </section>
 
     <section id="appointments" class="turnos">
@@ -74,29 +76,65 @@
 
       </div>
     </section>
-  </section>
+    </section>
 
-  <section id="gallery" class="galeria">
-    <div>
-      <h2 class="galeria-title">Galeria</h2>
+    <section id="gallery" class="galeria">
+      <div>
+        <h2 class="galeria-title">Galeria</h2>
 
-    </div>
-  </section>
+      </div>
+    </section>
 
-</main>
-<footer>
+  </main>
+  <footer>
 
     <section id="contact" class="contacto">
       <div>
         <h2 class="contacto-title">Contacto</h2>
       </div>
+      <div class="contacto-container">
+        <form id="form">
+
+          <div class="divForm">
+            <label for="Nombre">Nombre</label>
+            <input type="text" placeholder="Ingrese su nombre" required id="Nombre" class="inputForm">
+          </div>
+
+          <div class="divForm">
+            <label for="Email">Email</label>
+            <input type="email" placeholder="Ingrese su email" required id="Email" class="inputForm">
+          </div>
+
+          <div class="divForm">
+            <label for="Telefono">Telefono</label>
+            <input type="phone" placeholder="0000-0000000" id="Telefono" class="inputForm">
+          </div>
+
+          <div class="divForm">
+            <textarea name="Mensaje" id="Mensaje" cols="5" rows="5" placeholder="Mensaje"
+              class="inputForm"></textarea>
+          </div>
+
+          <div class="divForm">
+            <input type="submit" class="boton boton--enviar">
+            <input type="reset" class="boton boton--reset">
+          </div>
+
+
+
+        </form>
+      </div>
     </section>
 
-</footer>
+  </footer>
 
-<script src="./js/main.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
 
 
 </body>
