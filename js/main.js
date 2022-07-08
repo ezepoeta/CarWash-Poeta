@@ -130,29 +130,27 @@ const productos = [
 ]
 console.log(productos)
 
+let servicio = servicios
+let producto = productos
+
 while (variable == false) {
     let tipo = prompt('Menú Principal. 1.Servicios 2.Productos')
     switch (tipo) {
         case '1':
-            alert(servicios.find((el), el.tipo == 1, 2, 3, 4, 5 )),
+            for(servicio of servicios){
+                console.log(servicios.nombre)
+            }
             variable = true
             break;
         case '2':
-            alert(productos.find((el), el.tipo == 1, 2, 3, 4, 5, 6 , 7, 8, 9 )),
+            for(let producto of producto){
+                console.log(productos.nombre)
+            }
             variable = true
             break;
     
         default:
             alert('opcion no valida')
             break;
-    }}
-
-
-
-
-
-
-
-
-
-
+    }
+        }
