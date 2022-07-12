@@ -58,8 +58,7 @@ opacity: 90%;
 .turnos-title{
   padding: 400px 400px 400px 400px;
   color: black;
-  border: solid 2px;
-  border-radius: 30%;
+  
 }
 /* -------------------------------------------------------------------------------------------------------------------------------------- */
 .nosotros{
@@ -67,6 +66,7 @@ opacity: 90%;
   z-index: 999;
   opacity: 90%;
   width: 100%;
+  object-fit: cover;
 }
 .nosotros-title{
   padding: 400px 400px 400px 400px;
@@ -77,6 +77,7 @@ opacity: 90%;
   z-index: 999;
   opacity: 90%;
   width: 100%;
+  object-fit: cover;
 }
 .galeria-title{
   padding: 400px 400px 400px 400px;
@@ -163,4 +164,25 @@ width: 100%;
   text-align: center;
   border-radius: 5%;
   border-color: white;
+}
+.footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: #8a8a8a;
+}
+.links-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+flex-direction: column;
+
+}
+.redes-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
 }
