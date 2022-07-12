@@ -86,66 +86,72 @@ const productos = [
         tipo: 1,
         nombre: 'Shampoo ph-neutro 5lt',
         precio: 1400,
+        stock: 5
     },
     {
         tipo: 2,
         nombre: 'Shampoo siliconado 5lt',
         precio: 1200,
+        stock: 8
     },
     {
         tipo: 3,
         nombre: 'Apc limpiador 600cc',
         precio: 600,
+        stock: 16
     },
     {
         tipo: 4,
         nombre: 'Apc Tapizados 1lt',
         precio: 1800,
+        stock: 9
     },
     {
         tipo: 5,
         nombre: 'Removedor de insectos 600cc',
         precio: 1000,
+        stock: 14
     },
     {
         tipo: 6,
         nombre: 'Cera Autobrillo 750cc',
         precio: 1200,
+        stock: 20
     },
     {
         tipo: 7,
         nombre: 'Cera Autobrillo Negro 750cc',
         precio: 1400,
+        stock: 10
     },
     {
         tipo: 8,
         nombre: 'Revividor de Negros 1lt',
         precio: 1200,
+        stock: 24
     },
     {
         tipo: 9,
         nombre: 'Silicona 250cc',
         precio: 1800,
+        stock: 8
     }
 ]
 console.log(productos)
-
-let servicio = servicios
-let producto = productos
 
 while (variable == false) {
     let tipo = prompt('Menú Principal. 1.Servicios 2.Productos')
     switch (tipo) {
         case '1':
-            for(servicio of servicios){
-                console.log(servicios.nombre)
+            for(const servicio of servicios){
+                console.log(servicio.nombre)
             }
             variable = true
             break;
         case '2':
-            for(let producto of producto){
-                console.log(productos.nombre)
-            }
+          for (const producto of productos) {
+            console.log(producto.nombre)
+          }
             variable = true
             break;
     
@@ -154,3 +160,7 @@ while (variable == false) {
             break;
     }
         }
+
+productos.forEach((r)=>{
+    console.log('Stock de productos \n' + r.nombre + '=' + r.stock);
+}) 
