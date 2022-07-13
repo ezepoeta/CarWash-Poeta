@@ -169,9 +169,10 @@ productos.forEach((r)=>{
 const h3 = document.getElementById("turnos")
 console.log(h3);
 
-const contenedor = document.createElement("appointments");
-contenedor.innerHTML = "<h3> Productos</h3>";
-console.log(contenedor.innerHTML);
+const contenedor = document.getElementById("productos");
+const div = document.createElement("div")
+div.innerHTML = "<h3> Productos</h3>";
+contenedor.appendChild(div)
 
 let producto = { id: 1,  nombre: "Shampoo siliconado 5lt", precio: 1200 };
 let plantilla = `ID: ${producto.id} Producto: ${producto.nombre} $ ${producto.precio}`
