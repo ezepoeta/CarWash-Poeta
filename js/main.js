@@ -179,6 +179,27 @@ let plantilla = `ID: ${producto.id} Producto: ${producto.nombre} $ ${producto.pr
 
 console.log(plantilla);
 
+// eventos
+
+let Contacto = document.getElementById("form");
+Contacto.addEventListener("submit", validarFormulario);
+function validarFormulario(e){
+e.preventDefault ();
+console.log("Formulario Enviado")
+}
+
+let input1 = document.getElementById("Nombre");
+input1.addEventListener('input',() => {console.log(input1.value)})
+
+let input2 = document.getElementById("Email");
+input1.addEventListener('input',() => {console.log(input2.value)})
+
+let input3 = document.getElementById("Telefono");
+input1.addEventListener('input',() => {console.log(input3.value)})
+
+let input4 = document.getElementById("Mensaje");
+input1.addEventListener('input',() => {console.log(input4.value)})
+
 
 
 
