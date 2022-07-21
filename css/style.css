@@ -58,7 +58,9 @@ opacity: 90%;
 .-title{
   padding: 400px 400px 400px 400px;
   color: black;
-  
+}
+.card{
+  background: none;
 }
 /* -------------------------------------------------------------------------------------------------------------------------------------- */
 .nosotros{
@@ -78,9 +80,20 @@ opacity: 90%;
   opacity: 90%;
   width: 100%;
   object-fit: cover;
+  
 }
 .galeria-title{
-  padding: 400px 400px 400px 400px;
+  padding: 20px 400px 20px 400px;
+  color: #ececec;
+}
+.carousel{
+  max-width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-item{
+  object-fit: fill;
 }
 /* ----------------------------------------------------------------------------------------------------------------------------------------- */
 .contacto{
