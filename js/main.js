@@ -113,28 +113,6 @@ const productos = [
 ]
 console.log(productos)
 
-// while (variable == false) {
-//     let tipo = console.log('Menú Principal. 1.Servicios 2.Productos');
-//     switch (tipo) {
-//         case '1':
-//             for(const servicio of servicios){
-//                 console.log(servicio.nombre)
-//             }
-//             variable = true
-//             break;
-//         case '2':
-//           for (const producto of productos) {
-//             console.log(producto.nombre)
-//           }
-//             variable = true
-//             break;
-    
-//         default:
-//             alert('opcion no valida')
-//             break;
-//     }
-//         }
-
 // /////////////////////////////////////////////////////////
 
 const carrito = []
@@ -162,11 +140,20 @@ let html = productos.map((producto)=> {
 cardContainer.innerHTML = html
 console.log(carrito);
 
-
+// Operador AND
+carrito.length === 0 && console.log("El Carrito esta Vacio");
 
 productos.forEach((r)=>{
     console.log('Stock de productos \n' + r.nombre + '=' + r.stock);
 }) 
+
+// Desestructuracion
+const [nombre, precio, stock] = productos
+console.log(nombre, precio, stock);
+
+// Spread
+console.log(...productos);
+
 
 
 const h3 = document.getElementById("turnos")
