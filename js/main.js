@@ -113,27 +113,56 @@ const productos = [
 ]
 console.log(productos)
 
-while (variable == false) {
-    let tipo = console.log('Menú Principal. 1.Servicios 2.Productos');
-    switch (tipo) {
-        case '1':
-            for(const servicio of servicios){
-                console.log(servicio.nombre)
-            }
-            variable = true
-            break;
-        case '2':
-          for (const producto of productos) {
-            console.log(producto.nombre)
-          }
-            variable = true
-            break;
+// while (variable == false) {
+//     let tipo = console.log('Menú Principal. 1.Servicios 2.Productos');
+//     switch (tipo) {
+//         case '1':
+//             for(const servicio of servicios){
+//                 console.log(servicio.nombre)
+//             }
+//             variable = true
+//             break;
+//         case '2':
+//           for (const producto of productos) {
+//             console.log(producto.nombre)
+//           }
+//             variable = true
+//             break;
     
-        default:
-            alert('opcion no valida')
-            break;
-    }
-        }
+//         default:
+//             alert('opcion no valida')
+//             break;
+//     }
+//         }
+
+// /////////////////////////////////////////////////////////
+
+const carrito = []
+
+function agregarCarrito (id) {
+    carrito.push(productos.find(r=>r.tipo == id))
+    console.log(carrito)}
+
+const cardContainer = document.querySelector('#cardContainer')
+
+let html = productos.map((producto)=> {
+    return(
+        `
+        <div class="card" style="width: 15%">
+          <img src="${producto.img}" class="card-img-top"></img>
+          <div class="card-body">
+            <h5 class="card-title">${producto.nombre} </h5>
+            <p class="card-text">$${producto.precio}</p>
+            <button onClick="agregarCarrito(${producto.tipo})"> Agregar al Carrito</button>
+         </div>
+        </div>
+        `
+    )
+})
+cardContainer.innerHTML = html
+console.log(carrito);
+
+
 
 productos.forEach((r)=>{
     console.log('Stock de productos \n' + r.nombre + '=' + r.stock);
@@ -178,5 +207,11 @@ input1.addEventListener('input',() => {console.log(input4.value)})
 guardarLocal("Lista de Productos", JSON.stringify(productos))
 
 const almacenados = JSON.parse(localStorage.getItem ("Lista de Productos"));
+
+
+
+
+
+
 
 
