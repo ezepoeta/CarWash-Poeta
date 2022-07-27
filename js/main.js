@@ -139,6 +139,14 @@ let html = productos.map((producto)=> {
 })
 cardContainer.innerHTML = html
 console.log(carrito);
+// let btnCart = document.getElementById('btnCart')
+// btnCart.addEventListener('click', () =>{
+//     Toastify({
+//         text: "Añadiste al Carrito",  
+//         duration: 3000  
+//         }).showToast();
+// })
+
 
 // Operador AND
 carrito.length === 0 && console.log("El Carrito esta Vacio");
@@ -171,12 +179,33 @@ console.log(plantilla);
 
 // eventos
 
-let Contacto = document.getElementById("form");
-Contacto.addEventListener("submit", validarFormulario);
+let Contacto1 = document.getElementById("form");
+Contacto1.addEventListener("submit", validarFormulario);
 function validarFormulario(e){
 e.preventDefault ();
-console.log("Formulario Enviado")
+Swal.fire({
+    position: 'bottom-end',
+    icon: 'success',
+    title: 'A la brevedad será contactado',
+    showConfirmButton: false,
+    timer: 2000
+  })
 }
+// ///////////// esto agus no puedo hacer funcionar sin que me interfiera en el de arriba ///////////////////
+
+// let Contacto2 = document.getElementById("form");
+// Contacto2.addEventListener("reset", validarFormulario);
+// function validarFormulario(e){
+// e.preventDefault ();
+// Swal.fire({
+//     position: 'bottom-center',
+//     icon: 'error',
+//     title: '¿Seguro desea reestablecer los datos?',
+//     showConfirmButton: true,
+//   })
+// }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 let input1 = document.getElementById("Nombre");
 input1.addEventListener('input',() => {console.log(input1.value)})
@@ -194,10 +223,6 @@ input1.addEventListener('input',() => {console.log(input4.value)})
 guardarLocal("Lista de Productos", JSON.stringify(productos))
 
 const almacenados = JSON.parse(localStorage.getItem ("Lista de Productos"));
-
-
-
-
 
 
 
