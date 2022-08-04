@@ -1,0 +1,65 @@
+
+        {
+            "tipo": 1,
+            "img":'http://www.revigal.com.ar/wp-content/uploads/2015/05/LAVACOCHES-AZUL.jpg',
+            "nombre": 'Shampoo ph-neutro Siliconado 5lt',
+            "precio": 1400,
+            "stock": 5
+        }
+        {
+            "tipo": 2,
+            "img":'http://www.revigal.com.ar/wp-content/uploads/2015/05/bidon-lavacoche-ROJO.jpg',
+            "nombre": 'Shampoo Siliconado Concentrado 5lt',
+            "precio": 1200,
+            "stock": 8
+        }
+        {
+            "tipo": 3,
+            "img":'http://www.revigal.com.ar/wp-content/uploads/2015/04/LIMPIA-INTERIORES-800X800-1.jpg',
+            "nombre": 'Apc limpiador 650cc',
+            "precio": 600,
+            "stock": 16
+        }
+        {
+            "tipo": 4,
+            "img":'http://www.revigal.com.ar/wp-content/uploads/2015/04/FOTO-ESPUMA-ACTIVA-1-LITRO-2019-.jpg',
+            "nombre": 'Limpiador por Espuma 1lt',
+            "precio": 1800,
+            "stock": 9
+        }
+        {
+            "tipo": 5,
+            "img":'http://www.revigal.com.ar/wp-content/uploads/2015/04/LIMP-CARROCERIA-800X800-1.jpg',
+            "nombre": 'Removedor de insectos 650cc',
+            "precio": 1000,
+            "stock": 14
+        }
+        {
+            "tipo": 6,
+            "img":'http://www.revigal.com.ar/wp-content/uploads/2015/04/CERA-AUTOBRILLO-800X800-1.jpg',
+            "nombre": 'Cera Autobrillo 650cc',
+            "precio": 1200,
+            "stock": 20
+        }
+        {
+            "tipo": 7,
+            "img":'http://www.revigal.com.ar/wp-content/uploads/2015/04/CERA-AUTOBRILLO-NEGRO-800X800-1.jpg',
+            "nombre": 'Cera Autobrillo Negro 650cc',
+            "precio": 1400,
+            "stock": 10
+        }
+        {
+            "tipo": 8,
+            "img":'http://www.revigal.com.ar/wp-content/uploads/2015/04/web-REVIVIDOR-1-LITRO-2019-.jpg',
+            "nombre": 'Revividor de Negros 1lt',
+            "precio": 1200,
+            "stock": 24
+        },
+        {
+            "tipo": 9,
+            "img": 'http://www.revigal.com.ar/wp-content/uploads/2015/04/silicona-liquida800X800-31.jpg',
+            "nombre": 'Silicona 250cc',
+            "precio": 1800,
+            "stock": 8
+        }
+    

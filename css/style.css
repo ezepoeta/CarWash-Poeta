@@ -55,12 +55,23 @@ opacity: 90%;
   opacity: 90%;
   width: 100%;
 }
-.-title{
-  padding: 400px 400px 400px 400px;
+.titleProductos{
   color: black;
+  display: flex;
+  justify-content: center;
+}
+.cardContainer{
+  margin-bottom: 300px;
+  margin-left: 200px;
+
 }
 .card{
-  background: none;
+  background: rgba(211, 211, 211, 0.463);
+}
+.cartbtn{
+  color: white;
+  background-color: rgba(153, 205, 50, 0.526);
+  font-size: 100%;
 }
 /* -------------------------------------------------------------------------------------------------------------------------------------- */
 .nosotros{
