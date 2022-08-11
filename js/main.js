@@ -111,13 +111,19 @@ console.log(productos)
 
 
 const carrito = []
+function agregarCarrito(id){
+    const productos = productos.find(p=> p.id = id)
+    carrito.push(producto)
+}
+
 
 function agregarCarrito (id) {
     carrito.push(productos.find(r=>r.tipo == id))
     console.log(carrito)
     Toastify({
                 text: "Añadiste al Carrito",  
-                duration: 3000  
+                duration: 3000,  
+                destination: './carrito.html',
                 }).showToast();
 }
 
@@ -206,90 +212,12 @@ input1.addEventListener('input',() => {console.log(input4.value)})
 // storage-json
 const almacenados = JSON.parse(localStorage.getItem ("ListaProductos"));
 
-fetch('https://jsonplaceholder.typicode.com/posts', {
-        method: 'POST',
-        body: JSON.stringify({
-            title: 'Shampoo Siliconado Concentrado 5lt',
-            body: 'Shampoo Siliconado Concentrado es un producto diluible en hasta 1000lt de agua, siendo posible utilizarlo en todas sus diluciones en vehiculos con Tratamientos de pintura. ',
-            userId: 1,
-        }),
-        headers: {
-            'Content-type': 'application/json; charset=UTF-8',
-        },
-        method: 'POST',
-        body: JSON.stringify({
-            title: 'Shampoo ph-neutro Siliconado  5lt',
-            body: 'Shampoo ph-neutro Siliconado es un producto diluible en hasta 1000lt de agua, siendo posible utilizarlo en todas sus diluciones en vehiculos con Tratamientos de pintura. ',
-            userId: 2,
-        }),
-        headers: {
-            'Content-type': 'application/json; charset=UTF-8',
-        },
-        method: 'POST',
-        body: JSON.stringify({
-            title: 'Apc Limpiador 650cc',
-            body: 'El Apc Limpiador es compatible para la limpieza de interiores en todas sus texturas, desde telas hasta cueros y plasticos',
-            userId: 3,
-        }),
-        headers: {
-            'Content-type': 'application/json; charset=UTF-8',
-        },
-        method: 'POST',
-        body: JSON.stringify({
-            title: 'Limpiador por Espuma 1lt',
-            body: 'Es un producto para uso con hidrolavadoras y compatible con Tratamientos de pintura. ',
-            userId: 4,
-        }),
-        headers: {
-            'Content-type': 'application/json; charset=UTF-8',
-        },
-        method: 'POST',
-        body: JSON.stringify({
-            title: 'Removedor de Insectos 650cc',
-            body: 'Producto para la remocion de insectos ',
-            userId: 5,
-        }),
-        headers: {
-            'Content-type': 'application/json; charset=UTF-8',
-        },
-        method: 'POST',
-        body: JSON.stringify({
-            title: 'Cera Autobrillo 650cc ',
-            body: 'Producto para potenciar el brillo siendo posible utilizarlo en vehiculos con Tratamientos de pintura. ',
-            userId: 6,
-        }),
-        headers: {
-            'Content-type': 'application/json; charset=UTF-8',
-        },
-        method: 'POST',
-        body: JSON.stringify({
-            title: 'Cera Autobrillo Negro 650cc',
-            body: 'Producto para potenciar el brillo siendo posible utilizarlo en vehiculos con Tratamientos de pintura.',
-            userId: 7,
-        }),
-        headers: {
-            'Content-type': 'application/json; charset=UTF-8',
-        },
-        method: 'POST',
-        body: JSON.stringify({
-            title: 'Revividor de Negros 1lt',
-            body: 'Producto para potenciar el brillo de todo lo negro de su vehiculos (Plasticos y cubiertas)',
-            userId: 8,
-        }),
-        headers: {
-            'Content-type': 'application/json; charset=UTF-8',
-        },
-        method: 'POST',
-        body: JSON.stringify({
-            title: 'Silicona 250cc',
-            body: 'Silicona apta todo tipo de uso, no se va con el agua',
-            userId: 9,
-        }),
-        headers: {
-            'Content-type': 'application/json; charset=UTF-8',
-        },
-    })
-    .then((response) => response.json())
-    .then((data) => console.log(data))
+// function guardarCarrito() {
+//     localStorage.setItem('carrito', JSON.stringify(carrito))
+// }
+
+
+
+
 
 

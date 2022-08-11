@@ -4,15 +4,23 @@
 }
 /* ------------------------------------------------------------------------------------------------------------------------------------ */
 .index{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: #ffffff6e url(../img/megane.jpg) no-repeat center center;
+  background-size: 100%; 
+  z-index: 999;
+opacity: 90%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.foto-megane{
+  width: 100%;
 }
 .index-w{
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 100px 100px 10px 100px;
+  color: white;
 }
 .carwash-logo{
   display: flex;
@@ -24,29 +32,9 @@
   justify-content: center;
   align-items: center;
   padding:  0px 100px 100px 100px;
+  color: white;
 }
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
-.servicios{
-  background: #ffffff6e url(../img/megane.jpg) no-repeat center center;
-  background-size: 100%; 
-  z-index: 999;
-opacity: 90%;
-}
-.foto-megane{
-  width: 100%;
-}
-.servicios-title{
-  padding: 100px 100px 100px 100px;
-  color: whitesmoke;
-}
-.servicios-wash{
-  padding: 100px 100px 100px 100px;
-  color: whitesmoke;
-}
-.servicios-tapi{
-  padding: 100px 100px 100px 100px;
-  color: whitesmoke;
-}
 /* ------------------------------------------------------------------------------------------------------------------------------------ */
 .productos{
   background: url(../img/sandero.jpg) no-repeat center center ;
