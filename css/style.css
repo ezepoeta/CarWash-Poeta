@@ -51,8 +51,22 @@ align-items: center;
   background-color: rgba(153, 205, 50, 0.526);
   font-size: 100%;
 } 
+.producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.producto img {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+}
 .producto-carrito{
-  width: 100%;
+  width: 25%;
   max-width: 600px;
   display: flex;
   align-items: center;
@@ -68,8 +82,9 @@ width: 200px;
 height: 200px;
 object-fit: contain;
 }
+
 /* -------------------------------------------------------------------------------------------------------------------------------------- */
-.nosotros{
+/* .nosotros{
   background:url(../img/toro.jpg) no-repeat center center;
   z-index: 999;
   opacity: 90%;
@@ -80,7 +95,7 @@ object-fit: contain;
   padding: 400px 400px 400px 400px;
 }
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
-.galeria{
+/* .galeria{
   background: url(../img/a4-engine.jpg) no-repeat center center;
   z-index: 999;
   opacity: 90%;
@@ -105,9 +120,9 @@ object-fit: contain;
 }
 .carousel-item{
   object-fit: fill;
-}
+} */
 /* ----------------------------------------------------------------------------------------------------------------------------------------- */
-.contacto{
+/* .contacto{
   background: url(../img/a3-int.jpg) no-repeat center center;
   background-size: 100%;
   z-index: 999;
@@ -209,4 +224,4 @@ flex-direction: column;
   flex-direction: row;
   justify-content: center;
   list-style: none;
-}
+} */ 

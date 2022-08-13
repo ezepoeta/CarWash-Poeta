@@ -16,7 +16,7 @@ function mostrarCarrito() {
 
     } else {
         for (producto of carrito) {
-            const { id, nombre, precio, img, cantidad } = productos
+            const { id, nombre, precio, img, cantidad } = producto
             const productoHTML =
                 `
             <div class="producto-carrito">
