@@ -42,12 +42,33 @@
         </nav>
       </header>
 <main>
-  <div class="grid-carrito">
-  <section id="carritoRender" class="flex flex-column center">
-  </section>
-  <section id="resumen">
-    
-  </section>
+ <div class="header">
+    <h1>Finalizar el Pedido</h1>
+</div>
+
+<section id="finalizarCompra" class="flex center">
+    <form class="formCompra flex flex-column">
+        <label for="nombre">Nombre y Apellido</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+        <label for="email">Email</label>
+        <input for="email" id="email" name="email" placeholder="Email"></label>
+        <label for="tarjeta">Nro. Tarjeta</label>
+        <input type="text" id="tarjeta" placeholder="Nro.Tarjeta">
+        <label for="vencimiento">Fecha de Vencimiento</label>
+        <input type="text" id="vencimiento" placeholder="Fecha de Vencimiento">
+        <label for="codigo">Codigo de Seguridad</label>
+        <input type="text" id="codigo" placeholder="Codigo de seguridad">
+        <button class="btn" type="Submit" id="confirmarCompra">Confirmar</button>
+    </form>
+
+</section>
+
+
+
+
+
+
+
 </main>
 
 
@@ -61,7 +82,7 @@
       crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.24/dist/sweetalert2.all.min.js"></script>
       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-      <script src="../js/carrito.js"></script>
+      <script src="../js/comprar.js"></script>
 </body>
 
 </html>

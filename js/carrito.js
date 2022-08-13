@@ -21,8 +21,8 @@ function mostrarCarrito() {
                 `
             <div class="producto-carrito">
                 <img src="${img}"></img>
-                <h2>${nombre}</h2>
-                <p>${precio}</p>
+                <h4>${nombre}</h4>
+                <p>$${precio}</p>
                 <p>Cantidad:${cantidad}</p>
                 <button class="cartbtn" onclick="quitarCarrito(${id})">Eliminar</button>
             </div>              
@@ -36,18 +36,42 @@ mostrarCarrito()
 
 function quitarCarrito(id){
     const producto = carrito.find(producto => producto.id == id)
-    if(carrito.find(producto => producto.id == id)) {
-        const producto = carrito.find(producto =>producto.id == id )
-        producto.cantidad--
+    if(producto.cantidad === 1) {
+       carrito.splice(carrito.findIndex(producto =>producto.id == id ), 1)
     }else{
-        carrito.push({
-            ...producto,
-            cantidad: 1
-        })
-     }
+        producto.cantidad--
+        }
+     
      guardarCarrito()
+     mostrarResumen()
      mostrarCarrito()
-}
+    }
+
 function guardarCarrito() {
     localStorage.setItem('carrito', JSON.stringify(carrito))
 }
+
+const seccionResumen = document.querySelector('#resumen')
+
+function mostrarResumen(){
+    seccionResumen.innerHTML = ""
+    const total = calcularTotal()
+    const resumenHTML = `
+    <div class="resumen">
+        <h2>Resumen</h2>
+        <p>TOTAL: $${total}</p>
+        <a class="btn" href="./comprar.html">Comprar</a>
+    `
+    seccionResumen.innerHTML += resumenHTML
+}
+
+mostrarResumen()
+
+function calcularTotal (){
+    let total = 0
+    for (producto of carrito){
+        total += producto.precio * producto.cantidad
+    }
+    return total
+}
+ 
