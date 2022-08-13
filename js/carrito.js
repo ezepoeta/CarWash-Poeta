@@ -24,7 +24,7 @@ function mostrarCarrito() {
                 <h2>${nombre}</h2>
                 <p>${precio}</p>
                 <p>Cantidad:${cantidad}</p>
-                <button class="cartbtn" onclick="quitarCarrito(${id})">Eliminar del Carrito</button>
+                <button class="cartbtn" onclick="quitarCarrito(${id})">Eliminar</button>
             </div>              
         `
             carritoRender.innerHTML += productoHTML
@@ -34,4 +34,20 @@ function mostrarCarrito() {
 
 mostrarCarrito()
 
-
+function quitarCarrito(id){
+    const producto = carrito.find(producto => producto.id == id)
+    if(carrito.find(producto => producto.id == id)) {
+        const producto = carrito.find(producto =>producto.id == id )
+        producto.cantidad--
+    }else{
+        carrito.push({
+            ...producto,
+            cantidad: 1
+        })
+     }
+     guardarCarrito()
+     mostrarCarrito()
+}
+function guardarCarrito() {
+    localStorage.setItem('carrito', JSON.stringify(carrito))
+}

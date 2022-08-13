@@ -31,7 +31,7 @@ const carrito = JSON.parse(localStorage.getItem('carrito')) || []
 
 function agregarALCarrito(id){
     const producto = catalogo.find(producto => producto.id == id)
-    if(carrito.find(producto => producto.id)) {
+    if(carrito.find(producto => producto.id == id)) {
         const producto = carrito.find(producto =>producto.id == id )
         producto.cantidad++
     }else{
@@ -46,3 +46,4 @@ function agregarALCarrito(id){
 function guardarCarrito() {
     localStorage.setItem('carrito', JSON.stringify(carrito))
 }
+
