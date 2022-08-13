@@ -1,56 +1,65 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
+
 /* ------------------------------------------------------------------------------------------------------------------------------------ */
-.index{
+.index {
   background: #ffffff6e url(../img/megane.jpg) no-repeat center center;
-  background-size: 100%; 
+  background-size: 100%;
   z-index: 999;
-opacity: 90%;
-display: flex;
-justify-content: center;
-align-items: center;
+  opacity: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.foto-megane{
+
+.foto-megane {
   width: 100%;
 }
-.index-w{
+
+.index-w {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 100px 100px 10px 100px;
   color: white;
 }
-.carwash-logo{
+
+.carwash-logo {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0px 100px 0px 100px;
 }
-.index-frase{
+
+.index-frase {
   justify-content: center;
   align-items: center;
-  padding:  0px 100px 100px 100px;
+  padding: 0px 100px 100px 100px;
   color: white;
 }
+
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------------------------------------ */
 
- .productos-title{
+.productos-title {
   color: black;
   display: flex;
   text-align: center;
   background-color: azure;
-} 
-.card{
+}
+
+.card {
   background: rgba(211, 211, 211, 0.463);
 }
-.cartbtn{
+
+.cartbtn {
   color: white;
   background-color: rgba(153, 205, 50, 0.526);
   font-size: 100%;
-} 
+}
+
 .producto {
   display: flex;
   flex-direction: column;
@@ -61,12 +70,14 @@ align-items: center;
   border-radius: 5px;
   max-width: 30%;
 }
+
 .producto img {
   width: 250px;
   height: 250px;
   object-fit: contain;
 }
-.producto-carrito{
+
+.producto-carrito {
   max-width: 70%;
   display: flex;
   align-items: center;
@@ -77,15 +88,18 @@ align-items: center;
   border-radius: 5px;
   background-color: rgba(211, 211, 211, 0.463);
 }
-.producto-carrito img{
-width: 200px;
-height: 200px;
-object-fit: contain;
+
+.producto-carrito img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
 }
-.grid-carrito{
+
+.grid-carrito {
   margin-top: 100px;
 }
-.resumen{
+
+.resumen {
   border: 2px solid greenyellow;
   border-radius: 5px;
   background-color: rgba(211, 211, 211, 0.463);
@@ -95,16 +109,34 @@ object-fit: contain;
   align-items: center;
   justify-content: center;
 }
-.comprar{
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
+
+.comprar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.btn{
+
+.btn {
   color: white;
   background-color: rgba(153, 205, 50, 0.526);
-  font-size: 100%;}
+  font-size: 100%;
+}
+
+#form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #8a8a8a 0%, #ececec 95%);
+  border: solid 2px;
+  border-radius: 5%;
+  margin-bottom: 40px;
+  width: 600px;
+  height: 500px;
+  box-shadow: 10px 12px 14px -8px black;
+}
+
 /* -------------------------------------------------------------------------------------------------------------------------------------- */
 /* .nosotros{
   background:url(../img/toro.jpg) no-repeat center center;
@@ -246,4 +278,4 @@ flex-direction: column;
   flex-direction: row;
   justify-content: center;
   list-style: none;
-} */ 
+} */
