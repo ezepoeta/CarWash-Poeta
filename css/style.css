@@ -59,6 +59,7 @@ align-items: center;
   padding: 10px;
   border: 2px solid black;
   border-radius: 5px;
+  max-width: 30%;
 }
 .producto img {
   width: 250px;
@@ -84,14 +85,26 @@ object-fit: contain;
 .grid-carrito{
   margin-top: 100px;
 }
-
-
-
-
-
-
-
-
+.resumen{
+  border: 2px solid greenyellow;
+  border-radius: 5px;
+  background-color: rgba(211, 211, 211, 0.463);
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.comprar{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+.btn{
+  color: white;
+  background-color: rgba(153, 205, 50, 0.526);
+  font-size: 100%;}
 /* -------------------------------------------------------------------------------------------------------------------------------------- */
 /* .nosotros{
   background:url(../img/toro.jpg) no-repeat center center;

@@ -13,7 +13,7 @@ function mostrarCatalogo() {
         <div class="producto ">
         <img src="${img}"></img>
         <h2>${nombre}</h2>
-        <p>${precio}</p>
+        <p>$${precio}</p>
         <button class="cartbtn" onclick="agregarALCarrito(${id})">Agrergar al Carrito</button>
         </div>              
         `
