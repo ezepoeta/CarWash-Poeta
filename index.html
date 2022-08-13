@@ -34,10 +34,10 @@
               <a class="nav-link active" href="./pages/carrito.html">Carrito</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#gallery">Galeria</a>
+              <a class="nav-link disabled" href="#gallery">Galeria</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#contact">Contacto</a>
+              <a class="nav-link disabled" href="#contact">Contacto</a>
             </li>
           </ul>
         </div>
@@ -56,144 +56,9 @@
     </section>
 
     <section id="productos" class="productos" >
-      <div>
-        <h2 class="titleProductos">Productos</h2>
-        <div>
-        <div id="cardContainer" class="row row-cols-2 row-cols-md-2 g-6">
-        </div>
-      </div>
+    <h2 class="producto-title">Productos</h2>
+      <div id="containerProduct"></div>
     </section>
-
-    <section id="gallery" class="galeria">
-      <div>
-        <h2 class="galeria-title">Galeria</h2>
-      </div>
-      <div class="carousel">
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./img/carousel (1).jpg" class="d-block w-100" style="max-width: 700px;" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./img/carousel (2).jpg" class="d-block w-100" style="max-width: 700px;" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./img/carousel (3).jpg" class="d-block w-100" style="max-height: 600px;" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./img/carousel (4).jpg" class="d-block w-100" style="max-height: 600px;" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./img/carousel (5).jpg" class="d-block w-100" style="max-width: 700px;" alt="...">
-            </div> <div class="carousel-item">
-              <img src="./img/carousel (6).jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./img/carousel (7).jpg" class="d-block w-100" alt="...">
-            </div> 
-            <div class="carousel-item">
-              <img src="./img/carousel (8).jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./img/carousel (9).jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./img/carousel (10).jpg" class="d-block w-100" alt="...">
-            </div> 
-            <div class="carousel-item">
-              <img src="./img/carousel (11).jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./img/carousel (12).jpg" class="d-block w-100" alt="...">
-            </div> 
-            <div class="carousel-item">
-              <img src="./img/a3-int.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./img/a4-engine.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./img/megane.jpg" class="d-block w-100" alt="...">
-            </div> <div class="carousel-item">
-              <img src="./img/sandero.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./img/toro.jpg" class="d-block w-100" alt="...">
-            </div> <div class="carousel-item">
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-      
-    </section>
-
-  </main>
-  <footer>
-
-    <section id="contact" class="contacto">
-      <div>
-        <h2 class="contacto-title">Contacto</h2>
-      </div>
-      <div class="contacto-container">
-        <form id="form">
-
-          <div class="divForm">
-            <label for="Nombre">Nombre</label>
-            <input type="text" placeholder="Ingrese su nombre" required id="Nombre" class="inputForm">
-          </div>
-
-          <div class="divForm">
-            <label for="Email">Email</label>
-            <input type="email" placeholder="Ingrese su email" required id="Email" class="inputForm">
-          </div>
-
-          <div class="divForm">
-            <label for="Telefono">Telefono</label>
-            <input type="phone" placeholder="0000-0000000" id="Telefono" class="inputForm">
-          </div>
-
-          <div class="divForm">
-            <textarea name="Mensaje" id="Mensaje" cols="5" rows="5" placeholder="Mensaje" class="inputForm"></textarea>
-          </div>
-
-          <div class="divForm">
-            <input type="submit" class="boton boton--enviar" id="enviar">
-            <input type="reset" class="boton boton--reset" id="reset">
-          </div>
-
-
-
-        </form>
-      </div>
-
-      <div class="footer">
-        <ul class="links-footer">
-          <li><a href="#index1" style="text-decoration:none; color:#030303">Inicio</a></li>
-          <li><a href="#productos" style="text-decoration:none; color:#030303">Productos</a></li>
-          <li><a href="#carrito" style="text-decoration:none; color:#030303">Carrito</a></li>
-          <li><a href="#gallery" style="text-decoration:none; color:#030303">Galeria</a></li>
-          <li><a href="#contact" style="text-decoration:none; color:#030303">Contacto</a></li>
-        </ul>
-
-        <ul class="redes-footer">
-          <li><a
-              href=""><img
-                class="insta-logo" src="../CarWash/img/insta-logo.png" alt="Instagram"></a>
-          </li>
-          <li><a href="https://www.facebook.com/CarWash-Servicio-a-Domicilio-1711274852515622/"><img class="face-logo"
-                src="../CarWash/img/face-logo.png" alt="Facebook"></a></li>
-        </ul>
-
-      </div>
-    </section>
-
   </footer>
   
 
