@@ -19,7 +19,11 @@ function mostrarCatalogo() {
         `
         containerProduct.innerHTML += productoHTML
     }
+
 }
+
+        
+                
 
 let catalogo = []
 fetchProductos().then(productos => {
@@ -34,6 +38,11 @@ function agregarALCarrito(id){
     if(carrito.find(producto => producto.id == id)) {
         const producto = carrito.find(producto =>producto.id == id )
         producto.cantidad++
+        Toastify({
+                            text: "Añadiste al Carrito",  
+                            duration: 3000,  
+                            destination: "../pages/carrito.html"
+                            }).showToast();
     }else{
         carrito.push({
             ...producto,

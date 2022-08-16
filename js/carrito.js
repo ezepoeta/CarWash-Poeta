@@ -38,8 +38,24 @@ function quitarCarrito(id){
     const producto = carrito.find(producto => producto.id == id)
     if(producto.cantidad === 1) {
        carrito.splice(carrito.findIndex(producto =>producto.id == id ), 1)
+       Toastify({
+        text: "Eliminaste del Carrito",  
+        duration: 3000,  
+        destination: "../pages/carrito.html",
+        style: {
+            background: "linear-gradient(to right, #ff0000, #8b0000)",
+          },
+        }).showToast();
     }else{
         producto.cantidad--
+        Toastify({
+            text: "Eliminaste del Carrito",  
+            duration: 3000,  
+            destination: "../pages/carrito.html",
+            style: {
+                background: "linear-gradient(to right, #ff0000, #8b0000)",
+              },
+            }).showToast();
         }
      
      guardarCarrito()
