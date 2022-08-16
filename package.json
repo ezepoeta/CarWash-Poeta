@@ -21,6 +21,7 @@
     "nodemon": "^2.0.19"
   },
   "dependencies": {
+    "cleave.js": "^1.6.0",
     "sweetalert2": "^11.4.24"
   }
 }

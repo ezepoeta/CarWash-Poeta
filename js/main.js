@@ -10,7 +10,7 @@ function mostrarCatalogo() {
     for (producto of catalogo) {
         const {id, nombre, precio, img } = producto
         const productoHTML = `
-        <div class="producto col">
+        <div class="producto">
         <img src="${img}"></img>
         <h2>${nombre}</h2>
         <p>$${precio}</p>
@@ -46,8 +46,13 @@ function agregarALCarrito(id){
     }else{
         carrito.push({
             ...producto,
-            cantidad: 1
-        })
+            cantidad: 1,
+            
+        }); Toastify({
+            text: "Añadiste al Carrito",  
+            duration: 3000,  
+            destination: "../pages/carrito.html"
+            }).showToast();
      }
      guardarCarrito()
 }

@@ -41,7 +41,6 @@ function quitarCarrito(id){
        Toastify({
         text: "Eliminaste del Carrito",  
         duration: 3000,  
-        destination: "../pages/carrito.html",
         style: {
             background: "linear-gradient(to right, #ff0000, #8b0000)",
           },
@@ -51,7 +50,6 @@ function quitarCarrito(id){
         Toastify({
             text: "Eliminaste del Carrito",  
             duration: 3000,  
-            destination: "../pages/carrito.html",
             style: {
                 background: "linear-gradient(to right, #ff0000, #8b0000)",
               },
