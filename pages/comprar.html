@@ -46,22 +46,52 @@
     <h1>Finalizar el Pedido</h1>
 </div>
 
-<section id="finalizarCompra" class="flex flex-column center">
-    <div class="comprar">
-    <form class="form flex flex-column">
-        <label for="nombre">Nombre y Apellido</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Nombre">
-        <label for="email">Email</label>
-        <input for="email" id="email" name="email" placeholder="Email"></label>
-        <label for="tarjeta">Nro. Tarjeta</label>
-        <input type="text" id="tarjeta" placeholder="Nro.Tarjeta">
-        <label for="vencimiento">Fecha de Vencimiento</label>
-        <input type="text" id="vencimiento" placeholder="Fecha de Vencimiento">
-        <label for="codigo">Codigo de Seguridad</label>
-        <input type="text" id="codigo" placeholder="Codigo de seguridad">
-        <button class="btn" type="Submit" id="confirmarCompra">Confirmar</button>
+<section id="finalizarCompra" >
+    <form id="form">
+
+      <div class="divForm">
+        <label for="Nombre">Nombre</label>
+        <input type="text" placeholder="Ingrese su nombre" required id="Nombre" class="inputForm">
+      </div>
+
+      <div class="divForm">
+        <label for="Email">Email</label>
+        <input type="email" placeholder="Ingrese su email" required id="Email" class="inputForm">
+      </div>
+
+      <div class="divForm">
+        <label for="Telefono">Telefono</label>
+        <input type="phone" placeholder="0000-0000000" id="Telefono" class="inputForm">
+      </div>
+
+      <div class="divForm">
+        <label for="Tarjeta">Nro. Tarjeta</label>
+        <input type="text" placeholder="Ingrese su tarjeta" required id="0000 0000 0000 0000" class="inputForm">
+      </div>
+      
+      <div class="divForm">
+        <label for="Vencimiento">Vencimiento</label>
+        <input type="text" placeholder="MM/YY" required id="00/00" class="inputForm">
+      </div>
+
+      <div class="divForm">
+        <label for="C-seg">Codigo de Seguridad</label>
+        <input type="text" placeholder="Ingrese los 3 digitos" required id="000" class="inputForm">
+      </div>
+
+      <div class="divForm">
+        <input type="submit" class="boton boton--enviar" id="Confirmar">
+        
+      </div>
+
+
+
     </form>
 
+
+
+
+    
 </section>
 
 

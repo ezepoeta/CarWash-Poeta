@@ -10,7 +10,7 @@ function mostrarCatalogo() {
     for (producto of catalogo) {
         const {id, nombre, precio, img } = producto
         const productoHTML = `
-        <div class="producto ">
+        <div class="producto col">
         <img src="${img}"></img>
         <h2>${nombre}</h2>
         <p>$${precio}</p>
