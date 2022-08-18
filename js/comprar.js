@@ -15,6 +15,6 @@ Swal.fire({
   localStorage.removeItem('carrito')
   setTimeout(()=>{
     window.location.href ="/"
-  },3000)
+  },3500)
 }
 

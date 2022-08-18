@@ -74,7 +74,7 @@ function mostrarResumen(){
     <div class="resumen">
         <h3>Resumen</h3>
         <p>TOTAL: $${total}</p>
-        <a class="btnComprar" id="comprar" href="./comprar.html" >Comprar</a>
+        <a class="btnComprar " id="comprar" href="./comprar.html" >Comprar</a>
         <a class="btnVaciar" id="vaciar" href="./carrito.html">Vaciar Carrito</a>
     `
     seccionResumen.innerHTML += resumenHTML
@@ -85,6 +85,7 @@ const btnVaciar = document.getElementById('vaciar')
 btnVaciar.addEventListener('click',()=>{
     localStorage.removeItem('carrito')
 })
+
 
 function calcularTotal (){
     let total = 0
