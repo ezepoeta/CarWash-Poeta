@@ -7,25 +7,14 @@ e.preventDefault ();
 Swal.fire({
     position: 'center',
     icon: 'success',
-    title: 'Su Pedido esta siendo procesado!',
+    title: 'Gracias por su compra!',
+    text: 'A la brevedad le llegara un email con los detalles de la compra y envio',
     showConfirmButton: false,
     timer: 3500
-  })}
+  })
+  localStorage.removeItem('carrito')
+  setTimeout(()=>{
+    window.location.href ="/"
+  },3000)
+}
 
-new Cleave ('#tarjeta', {
-    creditCard: true,
-    onCreditCardTypeChanged: function (type) {
-        console.log('Credit Card type changed: ', type); 
-    }
-});
-
-new Cleave ('#vencimiento', {
-    date:true,
-    datePattern: ['m', 'y'],
-    delimiter:'/'
-});
-
-new Cleave ('#codseg', {
-    numericOnly: true,
-    blocks:[3]
-});

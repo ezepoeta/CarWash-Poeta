@@ -5,10 +5,10 @@ const carritoRender = document.querySelector('#carritoRender')
 
 function mostrarCarrito() {
     carritoRender.innerHTML = ""
-    if (carrito.lenght === 0) {
+    if (carrito.length === 0) {
         carritoRender.innerHTML =
             `
-            <div style="text-align: center">
+            <div class="vacio" style="text-align: center">
                 <h5 >UPS, no hay productos en el carrito</h5>
                 <a class="btn" href="/"> Volver al catalogo</a>
             </div>
@@ -72,14 +72,19 @@ function mostrarResumen(){
     const total = calcularTotal()
     const resumenHTML = `
     <div class="resumen">
-        <h2>Resumen</h2>
+        <h3>Resumen</h3>
         <p>TOTAL: $${total}</p>
-        <a class="btn" href="./comprar.html">Comprar</a>
+        <a class="btnComprar" id="comprar" href="./comprar.html" >Comprar</a>
+        <a class="btnVaciar" id="vaciar" href="./carrito.html">Vaciar Carrito</a>
     `
     seccionResumen.innerHTML += resumenHTML
+   
 }
-
 mostrarResumen()
+const btnVaciar = document.getElementById('vaciar')
+btnVaciar.addEventListener('click',()=>{
+    localStorage.removeItem('carrito')
+})
 
 function calcularTotal (){
     let total = 0

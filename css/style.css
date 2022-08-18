@@ -43,13 +43,19 @@
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------------------------------------ */
 
-.productos-title {
+.producto-title {
   color: black;
   display: flex;
   text-align: center;
-  background-color: azure;
+  justify-content: center;
 }
-
+.vacio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
 .card {
   background: rgba(211, 211, 211, 0.463);
 
@@ -105,6 +111,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 10%;
+  flex-direction: column;
 }
 
 .grid-carrito {
@@ -120,6 +127,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 5px;
 }
 .gridProductos{
   display: grid;
@@ -139,7 +147,21 @@
   background-color: rgba(153, 205, 50, 0.526);
   font-size: 100%;
 }
-
+.btnComprar {
+  color: rgb(0, 0, 0);
+  background-color: rgba(153, 205, 50, 0.526);
+  font-size: 100%;
+  text-decoration: none;
+  border-radius: 5%;
+}
+.btnVaciar {
+  color: rgb(0, 0, 0);
+  background-color: rgba(220, 86, 14, 0.526);
+  font-size: 100%;
+  text-decoration: none;
+  border-radius: 5%;
+  margin-top: 5px;
+}
 .comprar {
   display: flex;
   align-items: center;
