@@ -22,9 +22,6 @@ function mostrarCatalogo() {
 
 }
 
-        
-                
-
 let catalogo = []
 fetchProductos().then(productos => {
     catalogo = productos

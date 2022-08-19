@@ -22,7 +22,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px 100px 10px 100px;
+  padding: 300px 100px 10px 100px;
   color: white;
 }
 
@@ -30,13 +30,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px 100px 0px 100px;
+  padding: 50px 100px 0px 100px;
 }
 
 .index-frase {
   justify-content: center;
   align-items: center;
-  padding: 0px 100px 100px 100px;
+  padding: 50px 100px 600px 100px;
   color: white;
 }
 
@@ -73,7 +73,7 @@
   align-items: center;
   margin: 10px;
   padding: 10px;
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 5px;
   
 }
@@ -91,7 +91,7 @@
   justify-content: space-between;
   margin: 10px;
   padding: 10px 20px;
-  border: 2px solid greenyellow;
+  border: 1px solid greenyellow;
   border-radius: 5px;
   background-color: rgba(211, 211, 211, 0.463);
 }
