@@ -191,7 +191,7 @@
   border-radius: 5%;
   margin-bottom: 40px;
   width: 600px;
-  height: 600px;
+  height: 700px;
   box-shadow: 10px 12px 14px -8px black;
 } 
 
@@ -239,4 +239,8 @@
   text-align: center;
   border-radius: 5%;
   border-color: white;
+}
+.aviso{
+  color: red;
+  font-size: 15px;
 }

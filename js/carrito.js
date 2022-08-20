@@ -76,11 +76,22 @@ function mostrarResumen(){
         <p>TOTAL: $${total}</p>
         <a class="btnComprar" id="btnComprar" href="./comprar.html">Comprar</a>
         <a class="btnVaciar" id="btnVaciar" href="./carrito.html">Vaciar Carrito</a>
+    </div>
     `
     seccionResumen.innerHTML += resumenHTML
-
+    
 }
 mostrarResumen()
+
+var button = document.getElementById('btnComprar');
+        document.addEventListener('click', function (e) {
+            if (e.target.id === button.id) {
+              if (carrito == 0) {
+                e.preventDefault();
+            }}
+        });
+
+
 const btnVaciar = document.getElementById('btnVaciar')
 btnVaciar.addEventListener('click',()=>{
     localStorage.removeItem('carrito')
